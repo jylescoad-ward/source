@@ -17,7 +17,7 @@ Sub UpdateSoftware()
   If (LatestVersion = CurrentVersion) Then
     MsgBox("No Updates Availble")
   ElseIf (LatestVersion IsNot CurrentVersion) Then
-    MsgBox("New Update for Quick Launcher." + Environment.NewLine + Environment.NewLine + "Download Link:" + Environment.NewLine + LatestVersionLocation)
+    MsgBox("New Update!" + Environment.NewLine + Environment.NewLine + "Download Link:" + Environment.NewLine + LatestVersionLocation)
     Process.Start(LatestVersionLocation)
   End If
 End Sub
